@@ -1,15 +1,11 @@
 var total = prompt('How many km are left to go?');
 
-
-function kilometros(total){
-
-if (i>=100){
-    document.write("We still have a bit of driving left to go?");
-}else if (i>=50 && i<=100){
-    document.write("We'll be there in 5 minutes");
+if (total<=50){
+    console.log("I'm parking. I'll see you right now");
+}else if(total>50 && total<=100){
+    console.log("We'll be there in 5 minutes");
 }else{
-    document.write("I'm parking, I see you right now");
+    console.log("We still have a bit of driving left to go");
 }
-return kilometros();
-}
-console.log(total);
+
+
